@@ -64,7 +64,20 @@ h1{
 	margin-left: 15px;
 	color: #bb86fc;
 	width: 20vw;
+	text-shadow:1px 0px 1px white;
+	transition: all 150ms ease;
+}
+h1:hover{	
+	cursor: pointer;
+	color: #bb86fc;
 	text-shadow:1px 0px 2px white;
+}
+h2{
+	font-size: 2.5rem;
+}
+p{
+	line-height: 1.75;
+	font-size: 1.6rem;
 }
 .container{
     display: flex;
@@ -82,21 +95,25 @@ header nav{
 	width: 45vw;
 	display: flex;
 	justify-content: center;
-
+	
 }
 header nav a{
 	color: #bb86fc;
 	height: 15px;
 	text-decoration: none;
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	border-radius: 2px;
 	border-right: none;
 	padding: 10px 20px;
 	background: rgb(55,55,55);
-	text-shadow:1px 1px 2px black
+	text-shadow:1px 1px 2px black;
+	box-shadow:0px 0px 2px white;
+	transition: all 150ms ease;
 }
-header nav a:last-child{
-	border-right: 1px solid black;
+header nav a:hover{
+	box-shadow:0px 0px 5px white;
+	z-index: 1;
+	/* animation-fill-mode: backwards; */
 }
 section .about-section{
 	width: 100vw;
@@ -104,15 +121,31 @@ section .about-section{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 div.about-text{
+	box-sizing: border-box;
+	border-radius: 15px;
 	font-size: 2rem;
+	padding: 15px;
 	width: 50vw;
-	height: 20vh;
+	height: 30vh;
 	margin-right: 20px;
-	background:rgb(44,44,44)
-	displa
+	background:rgb(44,44,44);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+div.about-text a{
+	color: #bb86fc;
+	width: 80px;
+	height: 18px;
+	text-decoration: none;
+	box-shadow:0px 0px 2px white;
+	border-radius: 2px;
+	padding: 10px 20px;
+	background: rgb(55,55,55);
+	text-shadow:1px 1px 2px black;
 }
 img.about-img{
 	width: 300px;
