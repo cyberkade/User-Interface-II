@@ -327,6 +327,19 @@ header nav a{
 	box-shadow: 0px 0px 10px rgb(55,55,55);
 	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 }
+.projects-item{
+	border-radius: 15%;
+	box-shadow: 0px 0px 10px rgb(55,55,55);
+	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
+}
+.projects-item:hover{
+	background: url(https://www.picsum.photos/300);
+	/* background-size: cover;
+	background-repeat: no-repeat; */
+	color: white;
+	border-radius: 20%;
+	box-shadow:0px 0px 5px #bb86fc;
+}
 }
 @media screen and (min-width: 1510px){
 	.projects-cont{
