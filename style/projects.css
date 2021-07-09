@@ -175,12 +175,13 @@ main{
 	background: url(https://www.picsum.photos/300);
 	color: white;
 	border-radius: 20%;
-	box-shadow:0px 0px 5px #bb86fc;
+	box-shadow:0px 0px 5px white;
 }
 .projects-text{
 	position: relative;
-	top: 135px;
-	font-size: 1.75rem;	
+	top: 220px;
+	font-size: 1.5rem;	
+	align-self: center;
 }
 .projects-text:hover{
 	color:white;
@@ -233,6 +234,7 @@ footer{
 		background:rgb(25,25,25);
 		/* border: 1px solid red; */
 	}
+
 }
 @media screen and (max-width:700px) {
 	section.main-section p{
@@ -262,5 +264,8 @@ footer{
 		border-radius: 30px;
 		box-shadow: 0px 0px 10px rgb(55,55,55);
 		transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
+	}
+	.projects-item:first-of-type{
+		display: none;
 	}
 }
