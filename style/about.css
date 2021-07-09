@@ -191,15 +191,15 @@ body{
     a.city:hover{
         color: #d0aafd;
     }
-    a.link{
-      display:inline-block;
-      font-size:20px;
+    a img{
+      /* display:inline-block; */
+      width: 50px;
+	  height: 50px;
       text-decoration:none;
-      margin-left:5px;
       transition:250ms;
     }
-    a.link:hover{
-      font-size:22px;
+    a img:hover{
+		transform: rotateZ(-10deg);
     }
     a.link img{
       width: 32px;
@@ -241,32 +241,7 @@ footer a:hover{
 }
 
 
-@media screen and (max-width: 860px){
-
-.about-img{
-	width: 300px;
-	height: 300px;
-	margin-bottom: 50px;
-}
-.about-img:hover{
-	width: 300px;
-	height: 300px;
-	margin-bottom: 50px;
-}
-
-.about-section{
-	width:100%;
-	display: flex;
-	flex-flow: row wrap;
-}
-.about-text{
-	width: 100vw;
-	height: 30vh;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center
-}
+@media screen and (max-width: 980px){
 header{
 	display: flex;
 	flex-direction: column;
@@ -292,7 +267,27 @@ header nav a{
 	padding: 10px 20px;
 	background: rgb(55,55,55);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px white;
+	box-shadow:0px 0px 3px white;
 	transition: all 150ms ease;
 }
+main{
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+section.card{
+	width: 70vw;
+	margin: 15px 0;
+}
+section.card:last-of-type{
+	margin-top: 0;
+}
+a img{
+
+	text-decoration:none;
+	transition:250ms;
+  }
+  a img:hover{
+	  transform: rotateZ(-10deg);
+  }
 }
