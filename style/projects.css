@@ -85,7 +85,7 @@ p{
 .intro{
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background:rgb(55,55,55);
     height: 25vh;
@@ -201,7 +201,7 @@ footer{
     }
     footer a{
     color: #bb86fc;
-    height: 2rem;
+    height: 2.5rem;
     text-decoration: none;
     border-radius: 5px;
     border-right: none;
@@ -209,7 +209,7 @@ footer{
     background: rgb(55,55,55);
     text-shadow:1px 1px 2px black;
     box-shadow:0px 0px 2px white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     transition: all 150ms ease;
         
     }

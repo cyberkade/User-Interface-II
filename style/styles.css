@@ -78,11 +78,11 @@ body{
 	font-size: 4.1rem;
 }
 h2{
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 p{
 	line-height: 1.75;
-	font-size: 1.6rem;
+	font-size: 2rem;
 }
 .container{
     display: flex;
@@ -113,7 +113,7 @@ header nav a{
 	padding: 10px 20px;
 	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px white;
+	box-shadow:0px 0px 3px white;
 	transition: all 150ms ease;
 }
 header nav a:hover{
@@ -134,7 +134,7 @@ section .about-section{
 	box-sizing: border-box;
 	border-radius: 15px;
 	font-size: 2rem;
-	padding: 15px;
+	padding: 25px;
 	width: 40vw;
 	height: 40vh;
 	/* margin-right: 40px; */
@@ -149,7 +149,7 @@ section .about-section{
 	width: 80px;
 	height: 18px;
 	text-decoration: none;
-	box-shadow:0px 0px 2px white;
+	box-shadow:0px 0px 3px white;
 	border-radius: 2px;
 	padding: 10px 20px;
 	background: rgb(55,55,55);
@@ -187,7 +187,7 @@ section .about-section{
 	align-items: flex-end;
 	width: 300px;
 	height: 300px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	background: url(https://www.picsum.photos/300);
 	color: #bb86fc;
 	margin-top:20px;

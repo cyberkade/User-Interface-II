@@ -112,8 +112,9 @@ header nav a{
 	padding: 10px 20px;
 	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px white;
+	box-shadow:0px 0px 3px white;
 	transition: all 150ms ease;
+	font-family: 'Sriracha', cursive;
 }
 header nav a:hover{
 	box-shadow:0px 0px 10px white;
@@ -217,7 +218,7 @@ footer{
 }
 footer a{
 	color: #bb86fc;
-	height: 2rem;
+	height: 2.5rem;
 	text-decoration: none;
 	border-radius: 5px;
 	border-right: none;
@@ -225,7 +226,7 @@ footer a{
 	background: rgb(55,55,55);
 	text-shadow:1px 1px 2px black;
 	box-shadow:0px 0px 2px white;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	transition: all 150ms ease;
 	
 }
