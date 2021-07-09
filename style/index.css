@@ -1,1 +1,337 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Sriracha&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+*{
+	max-width: 100%;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 1.6rem;
+	font-family: 'Sriracha', cursive;
+	background: #121212;
+	color: white;
+}
+.header{
+	font-size: 4rem;
+	font-family: 'Caveat', cursive;
+	color: #bb86fc;
+	text-shadow:1px 0px 1px white;
+	transition: all 150ms ease;
+	text-decoration: none;
+}
+.header:hover{	
+	cursor: pointer;
+	color: #bb86fc;
+	text-shadow:1px 0px 2px white;
+	font-size: 4.1rem;
+}
+h2{
+	font-size: 2.5rem;
+}
+p{
+	line-height: 1.75;
+	font-size: 1.6rem;
+}
+.container{
+    display: flex;
+	flex-direction: column;
+}
+header{
+	width: 100vw;
+	height: 15vh;
+	display: flex;
+	flex-flow: column wrap;
+    align-items: center;
+	justify-content: space-evenly;
+	background:rgb(44,44,44) ;
+	box-shadow: 0px 2px 10px white;
+}
+header nav{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	position: relative;
+    /* left: 40px; */
+}
+header nav a{
+	color: #bb86fc;
+	height: 15px;
+	text-decoration: none;
+	border-radius: 2px;
+	border-right: none;
+	padding: 10px 20px;
+	background: rgb(55,55,55);
+	text-shadow:1px 1px 2px black;
+	box-shadow:0px 0px 2px white;
+	transition: all 150ms ease;
+}
+header nav a:hover{
+	box-shadow:0px 0px 10px white;
+	z-index: 1;
+	color:white;
+	/* animation-fill-mode: backwards; */
+}
+body{
+    font-family: 'Lato', sans-serif;
+      margin:0;
+      padding:0;
+    }
+
+
+
+    main{
+      height:100vh;
+      width:100vw;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      background-color:rgba(213, 187, 230, 0.7);
+    }
+    section.card{
+      padding:10px;
+      text-align:center;
+      height:auto;
+      border-radius:10px;
+      width:450px;
+      height:400px;
+      background-color:rgb(44,44,44);
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Sriracha', cursive;
+    }
+    /* section.card a:first-of-type{
+        
+    } */
+    div#links{
+      align-items:center;
+    }
+   
+    span{
+      font-weight:700;
+    }
+    p{
+      color:white;
+    }
+    img.heading{
+      width:150px;
+      height:150px;
+      border:1px solid rgba(250,250,250,0.6);
+      border-radius:50%;
+      object-position: 10% 10%; 
+      object-fit:cover;
+    }
+    .headingTwo{
+        width:150px;
+        height:150px;
+        border:1px solid rgba(250,250,250,0.6);
+        border-radius:50%;
+        object-position: 50% 50%; 
+        object-fit:cover;
+    }
+    a.city, a.city:visited {
+      /* text-decoration:none; */
+      font-weight:700;
+      cursor:pointer;
+      color:white;
+      transition:200ms;
+    }
+    a.city:hover{
+        color: #d0aafd;
+    }
+    a.link{
+      display:inline-block;
+      font-size:20px;
+      text-decoration:none;
+      margin-left:5px;
+      transition:250ms;
+    }
+    a.link:hover{
+      font-size:22px;
+    }
+    a.link img{
+      width: 32px;
+      height: 32px;
+    }
+
+
+
+.projects-cont{
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-flow:row wrap;
+	justify-content: space-evenly;
+}
+.projects-item{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 50px;
+	background: url(https://www.picsum.photos/300);
+	color: #bb86fc;
+	margin-top:20px;
+	border-radius:20px ;
+	box-shadow: 0px 0px 10px rgb(55,55,55);
+	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
+}
+.projects-item:hover{
+	background: url(https://www.picsum.photos/300);
+	color: white;
+	border-radius: 20%;
+	box-shadow:0px 0px 5px #bb86fc;
+}
+.projects-text{
+	position: relative;
+	top: 35px;
+	font-size: 2rem;
+}
+.projects-text:hover{
+	color:white;
+	cursor: pointer;
+	animation-name: test;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+footer{
+	margin-top:0;
+	width: 100vw;
+	height: 20vh;
+	background:rgb(44,44,44) ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer a{
+	color: #bb86fc;
+	height: 2rem;
+	text-decoration: none;
+	border-radius: 5px;
+	border-right: none;
+	padding: 10px 20px;
+	background: rgb(55,55,55);
+	text-shadow:1px 1px 2px black;
+	box-shadow:0px 0px 2px white;
+	font-size: 2rem;
+	transition: all 150ms ease;
+	
+}
+footer a:hover{
+	box-shadow:0px 0px 10px white;
+	transform: rotateZ(3deg);
+}
+
+@keyframes test{
+	from{transform: translateX(0px);}
+	to{transform: translateY(-5px)}
+}
+
+
+@media screen and (max-width: 860px){
+
+.about-img{
+	width: 300px;
+	height: 300px;
+	margin-bottom: 50px;
+}
+.about-img:hover{
+	width: 300px;
+	height: 300px;
+	margin-bottom: 50px;
+}
+
+.about-section{
+	width:100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.about-text{
+	width: 100vw;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center
+}
+header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.header{
+	width: 50vw;
+	text-align: center;
+	margin-bottom: 10px;
+}
+header nav{
+	width: 100vw;
+	position: relative;
+	right:0;
+}
+header nav a{
+	color: #bb86fc;
+	height: 15px;
+	text-decoration: none;
+	border-radius: 2px;
+	border-right: none;
+	padding: 10px 20px;
+	background: rgb(55,55,55);
+	text-shadow:1px 1px 2px black;
+	box-shadow:0px 0px 2px white;
+	transition: all 150ms ease;
+}
+}

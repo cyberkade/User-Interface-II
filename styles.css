@@ -92,17 +92,17 @@ header{
 	width: 100vw;
 	height: 15vh;
 	display: flex;
-	flex-direction:column;
+	flex-flow: column wrap;
 	justify-content: space-evenly;
 	background:rgb(44,44,44) ;
 	box-shadow: 0px 1px 5px rgb(110, 109, 109);
 }
 header nav{
-	width: 45vw;
+	width: 100vw;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	position: relative;
-	right: 100px;
+    left: 40px;
 }
 header nav a{
 	color: #bb86fc;
@@ -192,24 +192,28 @@ section .about-section{
 	background: url(https://www.picsum.photos/300);
 	color: #bb86fc;
 	margin-top:20px;
-	border-radius:20px ;
+	border-radius: 30px;
 	box-shadow: 0px 0px 10px rgb(55,55,55);
 	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 }
 .projects-item:hover{
 	background: url(https://www.picsum.photos/300);
 	color: white;
-	border-radius: 50%;
+	border-radius: 20%;
 	box-shadow:0px 0px 5px #bb86fc;
 }
 .projects-text{
 	position: relative;
 	top: 35px;
 	font-size: 2rem;
+	
 }
 .projects-text:hover{
 	color:white;
 	cursor: pointer;
+	animation-name: test;
+	animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 footer{
 	margin-top: 100px;
@@ -238,6 +242,12 @@ footer a:hover{
 	box-shadow:0px 0px 10px white;
 	transform: rotateZ(3deg);
 }
+
+@keyframes test{
+	from{transform: translateX(0px);}
+	to{transform: translateY(-5px)}
+}
+
 @media screen and (max-width: 860px){
 
 .about-img{
@@ -284,7 +294,6 @@ header nav a{
 	color: #bb86fc;
 	height: 15px;
 	text-decoration: none;
-	/* border: 1px solid black; */
 	border-radius: 2px;
 	border-right: none;
 	padding: 10px 20px;
@@ -292,5 +301,19 @@ header nav a{
 	text-shadow:1px 1px 2px black;
 	box-shadow:0px 0px 2px white;
 	transition: all 150ms ease;
+}
+.projects-item{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 200px;
+	height: 200px;
+	margin-bottom: 50px;
+	background: url(https://www.picsum.photos/300);
+	color: #bb86fc;
+	margin-top:20px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px rgb(55,55,55);
+	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 }
 }
