@@ -64,9 +64,7 @@ body{
 .header{
 	font-size: 4rem;
 	font-family: 'Caveat', cursive;
-	margin-left: 15px;
 	color: #bb86fc;
-	width: 20vw;
 	text-shadow:1px 0px 1px white;
 	transition: all 150ms ease;
 	text-decoration: none;
@@ -93,26 +91,26 @@ header{
 	height: 15vh;
 	display: flex;
 	flex-flow: column wrap;
+    align-items: center;
 	justify-content: space-evenly;
 	background:rgb(44,44,44) ;
-	box-shadow: 0px 1px 5px rgb(110, 109, 109);
+	box-shadow: 0px 2px 10px white;
 }
 header nav{
 	width: 100vw;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	position: relative;
-    left: 40px;
+    /* left: 40px; */
 }
 header nav a{
 	color: #bb86fc;
 	height: 15px;
 	text-decoration: none;
-	/* border: 1px solid black; */
 	border-radius: 2px;
 	border-right: none;
 	padding: 10px 20px;
-	background: rgb(55,55,55);
+	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
 	box-shadow:0px 0px 2px white;
 	transition: all 150ms ease;
@@ -123,100 +121,93 @@ header nav a:hover{
 	color:white;
 	/* animation-fill-mode: backwards; */
 }
-section .about-section{
-	width: 100vw;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	margin-top: 75px;
-}
-.about-text{
-	box-sizing: border-box;
-	border-radius: 15px;
-	font-size: 2rem;
-	padding: 15px;
-	width: 40vw;
-	height: 40vh;
-	/* margin-right: 40px; */
-	background:rgb(44,44,44);
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	box-shadow: 0px 0px 15px rgb(55,55,55);
-}
-.about-text a{
-	color: #bb86fc;
-	width: 80px;
-	height: 18px;
-	text-decoration: none;
-	box-shadow:0px 0px 2px white;
-	border-radius: 2px;
-	padding: 10px 20px;
-	background: rgb(55,55,55);
-	text-shadow:1px 1px 2px black;
-	transition: all 150ms ease;
-}
-.about-text a:hover{
-	box-shadow:0px 0px 10px white;
-}
-.about-img{
-	width: 450px;
-	height: 450px;
-	border-radius: 100%;
-	/* margin-left: 40px; */
-	box-shadow:1px 1px 10px rgb(44,44,44);
-	transition: box-shadow 250ms ease;
-	background: url(meCropped.png);
-	background-size: contain;
-}
-.about-img:hover{
-	width: 450px;
-	height: 450px;
-	box-shadow:0px 0px 10px white;
-}
-.projects-cont{
-	margin-top: 50px;
-	width: 100%;
-	display: flex;
-	flex-flow:row wrap;
-	justify-content: space-evenly;
-}
-.projects-item{
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	width: 300px;
-	height: 300px;
-	margin-bottom: 50px;
-	background: url(https://www.picsum.photos/300);
-	color: #bb86fc;
-	margin-top:20px;
-	border-radius: 30px;
-	box-shadow: 0px 0px 10px rgb(55,55,55);
-	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
-}
-.projects-item:hover{
-	background: url(https://www.picsum.photos/300);
-	color: white;
-	border-radius: 20%;
-	box-shadow:0px 0px 5px #bb86fc;
-}
-.projects-text{
-	position: relative;
-	top: 35px;
-	font-size: 2rem;
+body{
+    font-family: 'Lato', sans-serif;
+      margin:0;
+      padding:0;
+    }
+
+
+
+    main{
+      height:100vh;
+      width:100vw;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+      background-color:rgba(213, 187, 230, 0.7);
+    }
+    section.card{
+      padding:10px;
+      text-align:center;
+      height:auto;
+      border-radius:10px;
+      width:450px;
+      height:400px;
+      background-color:rgb(44,44,44);
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-around;
+      align-items: center;
+      font-family: 'Sriracha', cursive;
+    }
+    /* section.card a:first-of-type{
+        
+    } */
+    div#links{
+      align-items:center;
+    }
+   
+    span{
+      font-weight:700;
+    }
+    p{
+      color:white;
+    }
+    img.heading{
+      width:150px;
+      height:150px;
+      border:1px solid rgba(250,250,250,0.6);
+      border-radius:50%;
+      object-position: 10% 10%; 
+      object-fit:cover;
+    }
+    .headingTwo{
+        width:150px;
+        height:150px;
+        border:1px solid rgba(250,250,250,0.6);
+        border-radius:50%;
+        object-position: 50% 50%; 
+        object-fit:cover;
+    }
+    a.city, a.city:visited {
+      /* text-decoration:none; */
+      font-weight:700;
+      cursor:pointer;
+      color:white;
+      transition:200ms;
+    }
+    a.city:hover{
+        color: #d0aafd;
+    }
+    a.link{
+      display:inline-block;
+      font-size:20px;
+      text-decoration:none;
+      margin-left:5px;
+      transition:250ms;
+    }
+    a.link:hover{
+      font-size:22px;
+    }
+    a.link img{
+      width: 32px;
+      height: 32px;
+    }
+
 	
-}
-.projects-text:hover{
-	color:white;
-	cursor: pointer;
-	animation-name: test;
-	animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
 footer{
-	margin-top: 100px;
+	margin-top:0;
 	width: 100vw;
 	height: 20vh;
 	background:rgb(44,44,44) ;
@@ -247,6 +238,7 @@ footer a:hover{
 	from{transform: translateX(0px);}
 	to{transform: translateY(-5px)}
 }
+
 
 @media screen and (max-width: 860px){
 
@@ -301,19 +293,5 @@ header nav a{
 	text-shadow:1px 1px 2px black;
 	box-shadow:0px 0px 2px white;
 	transition: all 150ms ease;
-}
-.projects-item{
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	width: 200px;
-	height: 200px;
-	margin-bottom: 50px;
-	background: url(https://www.picsum.photos/300);
-	color: #bb86fc;
-	margin-top:20px;
-	border-radius: 50%;
-	box-shadow: 0px 0px 10px rgb(55,55,55);
-	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 }
 }
