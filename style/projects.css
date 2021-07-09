@@ -217,3 +217,50 @@ footer{
     box-shadow:0px 0px 10px white;
     transform: rotateZ(3deg);
     }
+
+@media screen and (max-width:1050px) {
+	section.main-section p{
+		width: 60vw;
+		text-align: center;
+	}
+	section.main-section{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		align-items: center;
+		background:rgb(25,25,25);
+		/* border: 1px solid red; */
+	}
+}
+@media screen and (max-width:700px) {
+	section.main-section p{
+		width: 60vw;
+		text-align: center;
+		font-size: 1.8rem;
+	}
+	section.main-section{
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		align-items: center;
+		background:rgb(25,25,25);
+		/* border: 1px solid red; */
+	}
+	.projects-item{
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: 200px;
+		height: 200px;
+		margin-bottom: 50px;
+		background: url(https://www.picsum.photos/300);
+		color: #bb86fc;
+		border-radius: 30px;
+		box-shadow: 0px 0px 10px rgb(55,55,55);
+		transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
+	}
+}
