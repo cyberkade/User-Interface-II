@@ -1,0 +1,75 @@
+a.navbar-brand {
+  color: #b6b1e7;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.nav-link {
+  color: #a79b83;
+  text-transform: uppercase;
+  transition: color 200ms;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.nav-link:hover {
+  color: #b6b1e7;
+}
+.navbar-toggler-icon {
+  color: #b6b1e7;
+}
+button {
+  margin-top: 0;
+}
+span {
+  color: #b6b1e7;
+  font-weight: 100;
+}
+body {
+  color: #a79b83;
+  background-color: #f7edf0;
+  font-family: "Nunito", sans-serif;
+}
+div h1 {
+  font-size: 4em;
+  font-weight: 100;
+}
+div h2 {
+  color: #b6b1e7;
+  font-size: 2.5em;
+}
+img {
+  width: 1800px;
+  height: 1800px;
+}
+svg.bi-droplet-half {
+  color: #00b4d8;
+  margin: 1em 0;
+}
+.text {
+  color: #a79b83;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.content {
+  margin-top: 100px;
+}
+.navbar.scrolled {
+  background-color: #dbdbdb;
+}
+#main-nav {
+  background-color: #dbdbdb;
+}
+@media (max-width: 1400px) {
+  div h1 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 1150px) {
+  div h1 {
+    font-size: 2.5em;
+  }
+}
+@media (max-width: 1000px) {
+  div h1 {
+    font-size: 1.7em;
+  }
+}

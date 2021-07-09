@@ -82,6 +82,9 @@ p{
 	line-height: 1.75;
 	font-size: 2rem;
 }
+a{
+	text-decoration: none;
+}
 .intro{
     display: flex;
     flex-flow: column;
@@ -236,7 +239,7 @@ footer{
 	}
 
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:780px) {
 	section.main-section p{
 		width: 60vw;
 		text-align: center;
@@ -250,7 +253,6 @@ footer{
 		justify-content: space-around;
 		align-items: center;
 		background:rgb(25,25,25);
-		/* border: 1px solid red; */
 	}
 	.projects-item{
 		display: flex;
@@ -265,7 +267,36 @@ footer{
 		box-shadow: 0px 0px 10px rgb(55,55,55);
 		transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 	}
-	.projects-item:first-of-type{
-		display: none;
-	}
+
 }
+@media screen and (max-width:700px) {
+	.intro{
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		align-items: center;
+		background:rgb(55,55,55);
+		height: 25vh;
+		padding:20px;
+		border-radius: 10px;
+		position: relative;
+		top: 75px;
+	}
+	.projects-item{
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		width: 100px;
+		height: 100px;
+		margin-bottom: 50px;
+		background: url(https://www.picsum.photos/300);
+		color: #bb86fc;
+		border-radius: 30px;
+		box-shadow: 0px 0px 10px rgb(55,55,55);
+		transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
+	}
+
+	footer a{
+		color: #bb86fc;
+		height: 2.5rem;
+}}
