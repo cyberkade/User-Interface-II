@@ -94,7 +94,7 @@ header{
 	box-shadow: 0px 1px 5px rgb(110, 109, 109);
 }
 header nav{
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	position: relative;
@@ -234,8 +234,6 @@ footer a:hover{
 
 @media screen and (max-width: 500px){
 	header{
-		width: 100vw;
-		height: 15vh;
 		display: flex;
 		flex-flow: column wrap;
 		align-items: center;
@@ -244,7 +242,7 @@ footer a:hover{
 		box-shadow: 0px 1px 5px rgb(55,55,55);
 	}
 	p{
-		font-size: 1.2rem;
+		font-size: 1.6rem;
 		margin: 5px 0px;
 	}	
 	 main{
@@ -288,8 +286,15 @@ footer a:hover{
 }
 
 @media screen and (max-width: 980px){
+	.header{
+		width: 50vw;
+		text-align: center;
+	}
 	body nav a, h1{
 		font-size: 1.4rem;
+	}
+	header nav a{
+		font-size: 1.6rem;
 	}
 	main{
 		display: flex;
@@ -310,5 +315,36 @@ footer a:hover{
 	}
 	a img:hover{
 		transform: rotateZ(-10deg);
+	}
+}
+@media screen and (min-width: 1900px){
+	header a.header{
+		font-size: 5rem;
+	}
+	h2{
+		font-size: 4rem;
+	}
+	p{
+		line-height: 1.75;
+		font-size: 1.8rem;
+	}
+	header nav a{
+		font-size: 2.5rem;
+		color: #FBFFFB;
+		height: 2.5rem;
+		text-decoration: none;
+		border-radius: 3px;;
+		border-right: none;
+		padding: 10px 20px;
+		background: rgb(35,35,35);
+		text-shadow:1px 1px 2px black;
+		box-shadow: 0px 0px 3px #FBFFFB;
+		font-size: 2.5rem;
+		transition: all 150ms ease;
+	}
+	footer a{
+		height: 3.5rem;
+		padding: 15px 33px;
+		font-size: 3rem;
 	}
 }

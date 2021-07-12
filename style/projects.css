@@ -61,9 +61,8 @@ body{
 	background: #121212;
 	color: #FBFFFB;
 }
-
 h2{
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 p{
 	line-height: 1.75;
@@ -101,13 +100,6 @@ a{
 	cursor: pointer;
 	color: #FBFFFB;
 	font-size: 4.1rem;
-}
-h2{
-	font-size: 3rem;
-}
-p{
-	line-height: 1.75;
-	font-size: 2rem;
 }
 .container{
     display: flex;
@@ -233,9 +225,44 @@ footer a:hover{
 	box-shadow:0px 0px 10px #bb86fc;
 	transform: rotateZ(3deg);
 }
+@media screen and (min-width:1900px){
+	header a.header{
+		font-size: 5rem;
+	}
+	header nav a{
+		font-size: 2.5rem;
+		height: 2.5rem;
+		padding: 10px 20px;
+		font-size: 2.5rem;
+	}
+}
+@media screen and (min-width: 1333px){
+	
+	.projects-item{
+		width: 395px;
+		height: 395px;
+		margin-bottom: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.projects-item:hover{
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.projects-text{
+		top: 220px;
+	}
+	footer a{
+		height: 3.5rem;
+		padding: 15px 33px;
+		font-size: 3rem;
+	}
+}
 
 @media screen and (max-width:1050px) {
-	
+	.header{
+		width: 50vw;
+	}
 	section.main-section p{
 		width: 60vw;
 		text-align: center;
@@ -248,11 +275,14 @@ footer a:hover{
 		justify-content: space-around;
 		align-items: center;
 		background:rgb(25,25,25);
-		/* border: 1px solid red; */
 	}
 
 }
 @media screen and (max-width:780px) {
+	.header{
+		width: 50vw;
+		text-align: center;
+	}
 	section.main-section p{
 		width: 60vw;
 		text-align: center;
@@ -284,32 +314,23 @@ footer a:hover{
 }
 @media screen and (max-width:700px) {
 	.intro{
-		display: flex;
-		flex-flow: column;
-		justify-content: space-around;
-		align-items: center;
-		background:rgb(55,55,55);
-		height: 25vh;
 		padding:20px;
-		border-radius: 10px;
-		position: relative;
 		top: 75px;
 	}
+	section.main-section p{
+		font-size: 1.4rem;
+	}
 	.projects-item{
-		display: flex;
-		justify-content: center;
-		align-items: flex-end;
 		width: 100px;
 		height: 100px;
-		margin-bottom: 50px;
-		background: url(https://www.picsum.photos/300);
-		color: #bb86fc;
-		border-radius: 30px;
-		box-shadow: 0px 0px 10px rgb(55,55,55);
-		transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 	}
-
-	footer a{
-		color: #bb86fc;
-		height: 2.5rem;
-}}
+}
+@media screen and (max-width:360px){
+	header nav a{
+		max-width: 100%;
+		font-size: 1.4rem;
+	}
+	section.main-section p{
+		font-size: 1.2rem;
+	}
+}
