@@ -59,22 +59,9 @@ body{
 	font-size: 1.6rem;
 	font-family: 'Sriracha', cursive;
 	background: #121212;
-	color: white;
+	color: #FBFFFB;
 }
-.header{
-	font-size: 4rem;
-	font-family: 'Caveat', cursive;
-	color: #bb86fc;
-	text-shadow:1px 0px 1px white;
-	transition: all 150ms ease;
-	text-decoration: none;
-}
-.header:hover{	
-	cursor: pointer;
-	color: #bb86fc;
-	text-shadow:1px 0px 2px white;
-	font-size: 4.1rem;
-}
+
 h2{
 	font-size: 2.5rem;
 }
@@ -101,25 +88,51 @@ a{
     display: flex;
 	flex-direction: column;
 }
+.header{
+	font-size: 4rem;
+	font-family: 'Caveat', cursive;
+	color: #FBFFFB;
+	width: 20vw;
+	text-shadow:1px 0px 1px #FBFFFB;
+	transition: all 150ms ease;
+	text-decoration: none;
+}
+.header:hover{	
+	cursor: pointer;
+	color: #FBFFFB;
+	font-size: 4.1rem;
+}
+h2{
+	font-size: 3rem;
+}
+p{
+	line-height: 1.75;
+	font-size: 2rem;
+}
+.container{
+    display: flex;
+	flex-direction: column;
+}
 header{
 	width: 100vw;
 	height: 15vh;
+	text-align: center;
 	display: flex;
 	flex-flow: column wrap;
-    align-items: center;
 	justify-content: space-evenly;
+	align-items: center;
 	background:rgb(44,44,44) ;
-	box-shadow: 0px 1px 5px rgb(55,55,55);
+	box-shadow: 0px 1px 5px rgb(110, 109, 109);
 }
 header nav{
-	width: 100vw;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	position: relative;
-    /* left: 40px; */
+	max-width: 100%;
 }
 header nav a{
-	color: #bb86fc;
+	color: #FBFFFB;
 	height: 15px;
 	text-decoration: none;
 	border-radius: 2px;
@@ -127,14 +140,14 @@ header nav a{
 	padding: 10px 20px;
 	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 3px white;
+	box-shadow:0px 0px 3px #FBFFFB;
 	transition: all 150ms ease;
 }
 header nav a:hover{
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #bb86fc;
 	z-index: 1;
-	color:white;
-	/* animation-fill-mode: backwards; */
+	color:#FBFFFB;
+	animation-fill-mode: backwards;
 }
 
 section.main-section{
@@ -176,18 +189,18 @@ main{
 }
 .projects-item:hover{
 	background: url(https://www.picsum.photos/300);
-	color: white;
+	color: #FBFFFB;
 	border-radius: 20%;
-	box-shadow:0px 0px 5px white;
+	box-shadow:0px 0px 5px #FBFFFB;
 }
 .projects-text{
 	position: relative;
-	top: 220px;
+	top: 150px;
 	font-size: 1.5rem;	
 	align-self: center;
 }
 .projects-text:hover{
-	color:white;
+	color:#FBFFFB;
 	cursor: pointer;
 }
 .card{
@@ -195,32 +208,31 @@ main{
     /* height: ; */
 }
 footer{
-    margin-top:0;
-    width: 100vw;
-    height: 20vh;
-    background:rgb(44,44,44) ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    footer a{
-    color: #bb86fc;
-    height: 2.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    border-right: none;
-    padding: 10px 20px;
-    background: rgb(55,55,55);
-    text-shadow:1px 1px 2px black;
-    box-shadow:0px 0px 2px white;
-    font-size: 2.5rem;
-    transition: all 150ms ease;
-        
-    }
-    footer a:hover{
-    box-shadow:0px 0px 10px white;
-    transform: rotateZ(3deg);
-    }
+	width: 100vw;
+	height: 20vh;
+	background:rgb(44,44,44) ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer a{
+	color: #FBFFFB;
+	height: 2.5rem;
+	text-decoration: none;
+	border-radius: 5px;
+	border-right: none;
+	padding: 10px 20px;
+	background: rgb(55,55,55);
+	text-shadow:1px 1px 2px black;
+	box-shadow:0px 0px 2px #FBFFFB;
+	font-size: 2.5rem;
+	transition: all 150ms ease;
+	
+}
+footer a:hover{
+	box-shadow:0px 0px 10px #bb86fc;
+	transform: rotateZ(3deg);
+}
 
 @media screen and (max-width:1050px) {
 	

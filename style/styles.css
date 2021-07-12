@@ -59,22 +59,20 @@ body{
 	font-size: 1.6rem;
 	font-family: 'Sriracha', cursive;
 	background: #121212;
-	color: white;
+	color: #FBFFFB;
 }
 .header{
 	font-size: 4rem;
 	font-family: 'Caveat', cursive;
-	margin-left: 15px;
-	color: #bb86fc;
+	color: #FBFFFB;
 	width: 20vw;
-	text-shadow:1px 0px 1px white;
+	text-shadow:1px 0px 1px #FBFFFB;
 	transition: all 150ms ease;
 	text-decoration: none;
 }
 .header:hover{	
 	cursor: pointer;
-	color: #bb86fc;
-	text-shadow:1px 0px 2px white;
+	color: #FBFFFB;
 	font-size: 4.1rem;
 }
 h2{
@@ -91,22 +89,23 @@ p{
 header{
 	width: 100vw;
 	height: 15vh;
+	text-align: center;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-evenly;
+	align-items: center;
 	background:rgb(44,44,44) ;
 	box-shadow: 0px 1px 5px rgb(110, 109, 109);
 }
 header nav{
 	width: 90%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	position: relative;
-    left: 40px;
 	max-width: 100%;
 }
 header nav a{
-	color: #bb86fc;
+	color: #FBFFFB;
 	height: 15px;
 	text-decoration: none;
 	border-radius: 2px;
@@ -114,14 +113,14 @@ header nav a{
 	padding: 10px 20px;
 	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 3px white;
+	box-shadow:0px 0px 3px #FBFFFB;
 	transition: all 150ms ease;
 }
 header nav a:hover{
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #bb86fc;
 	z-index: 1;
-	color:white;
-	/* animation-fill-mode: backwards; */
+	color:#FBFFFB;
+	animation-fill-mode: backwards;
 }
 section .about-section{
 	width: 100vw;
@@ -135,7 +134,7 @@ section .about-section{
 	box-sizing: border-box;
 	border-radius: 15px;
 	font-size: 2rem;
-	padding: 25px;
+	padding: 20px;
 	width: 40vw;
 	height: 40vh;
 	/* margin-right: 40px; */
@@ -150,7 +149,7 @@ section .about-section{
 	width: 80px;
 	height: 18px;
 	text-decoration: none;
-	box-shadow:0px 0px 3px white;
+	box-shadow:0px 0px 3px #FBFFFB;
 	border-radius: 2px;
 	padding: 10px 20px;
 	background: rgb(55,55,55);
@@ -158,7 +157,8 @@ section .about-section{
 	transition: all 150ms ease;
 }
 .about-text a:hover{
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #FBFFFB;
+	transform: translateY(-0.1em);
 }
 .about-img{
 	width: 450px;
@@ -173,7 +173,7 @@ section .about-section{
 .about-img:hover{
 	width: 450px;
 	height: 450px;
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #FBFFFB;
 }
 .projects-cont{
 	margin-top: 50px;
@@ -202,7 +202,7 @@ section .about-section{
 	background: url(https://www.picsum.photos/300);
 	background-size: cover;
 	background-repeat: no-repeat;
-	color: white;
+	color: #FBFFFB;
 	border-radius: 20%;
 	box-shadow:0px 0px 5px #bb86fc;
 }
@@ -213,7 +213,7 @@ section .about-section{
 	
 }
 .projects-text:hover{
-	color:white;
+	color:#FBFFFB;
 	cursor: pointer;
 	animation-name: test;
 	animation-duration: 1s;
@@ -229,23 +229,24 @@ footer{
 	align-items: center;
 }
 footer a{
-	color: #bb86fc;
-	height: 2rem;
+	color: #FBFFFB;
+	height: 2.5rem;
 	text-decoration: none;
 	border-radius: 5px;
 	border-right: none;
 	padding: 10px 20px;
 	background: rgb(55,55,55);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px white;
-	font-size: 2rem;
+	box-shadow:0px 0px 2px #FBFFFB;
+	font-size: 2.5rem;
 	transition: all 150ms ease;
 	
 }
 footer a:hover{
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #bb86fc;
 	transform: rotateZ(3deg);
 }
+
 
 @keyframes test{
 	from{transform: translateX(0px);}
@@ -318,7 +319,7 @@ footer a:hover{
 		background: url(https://www.picsum.photos/300);
 		/* background-size: cover;
 		background-repeat: no-repeat; */
-		color: white;
+		color: #FBFFFB;
 		border-radius: 20%;
 		box-shadow:0px 0px 5px #bb86fc;
 	}
@@ -383,7 +384,7 @@ footer a:hover{
 		padding: 10px 20px;
 		background: rgb(35,35,35);
 		text-shadow:1px 1px 2px black;
-		box-shadow:0px 0px 3px white;
+		box-shadow:0px 0px 3px #FBFFFB;
 		transition: all 150ms ease;
 	}
 	.projects-item{
@@ -404,7 +405,7 @@ footer a:hover{
 		background: url(https://www.picsum.photos/300);
 		/* background-size: cover;
 		background-repeat: no-repeat; */
-		color: white;
+		color: #FBFFFB;
 		border-radius: 20%;
 		box-shadow:0px 0px 5px #bb86fc;
 	}
@@ -442,7 +443,7 @@ footer a:hover{
 		padding: 10px 20px;
 		background: rgb(55,55,55);
 		text-shadow:1px 1px 2px black;
-		box-shadow:0px 0px 3px white;
+		box-shadow:0px 0px 3px #FBFFFB;
 		font-size: 2.5rem;
 		transition: all 150ms ease;			
 	}
@@ -450,7 +451,7 @@ footer a:hover{
 		background: url(https://www.picsum.photos/300);
 		background-size: cover;
 		background-repeat: no-repeat;
-		color: white;
+		color: #FBFFFB;
 		border-radius: 20%;
 		box-shadow:0px 0px 5px #bb86fc;
 	}
