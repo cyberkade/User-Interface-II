@@ -240,54 +240,83 @@ footer a:hover{
 	to{transform: translateY(-5px)}
 }
 
+@media screen and (max-width: 500px){
+	header{
+		width: 100vw;
+		height: 15vh;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+		justify-content: space-evenly;
+		background:rgb(44,44,44) ;
+		box-shadow: 0px 1px 5px rgb(55,55,55);
+	}
+	p{
+		font-size: 1.2rem;
+		margin: 5px 0px;
+	}	
+	 main{
+		height:100vh;
+		width:100vw;
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		background-color:rgba(213, 187, 230, 0.7);
+	  }
+	  section.card{
+		padding:10px;
+		text-align:center;
+		border-radius:10px;
+		width:400px;
+		height:400px;
+		background-color:rgb(44,44,44);
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+		align-items: center;
+		font-family: 'Sriracha', cursive;
+		
+	  }
+	  img.heading{
+		width:100px;
+		height:100px;
+		border:1px solid rgba(250,250,250,0.6);
+		border-radius:50%;
+		object-position: 10% 10%; 
+		object-fit:cover;
+	  }
+	  .headingTwo{
+		  width:100px;
+		  height:100px;
+		  border:1px solid rgba(250,250,250,0.6);
+		  border-radius:50%;
+		  object-position: 50% 50%; 
+		  object-fit:cover;
+	  }	   
+}
 
 @media screen and (max-width: 980px){
-header{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.header{
-	width: 50vw;
-	text-align: center;
-	margin-bottom: 10px;
-}
-header nav{
-	width: 100vw;
-	position: relative;
-	right:0;
-}
-header nav a{
-	color: #bb86fc;
-	height: 15px;
-	text-decoration: none;
-	border-radius: 2px;
-	border-right: none;
-	padding: 10px 20px;
-	background: rgb(55,55,55);
-	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 3px white;
-	transition: all 150ms ease;
-}
-main{
-	display: flex;
-	flex-flow: column;
-	justify-content: space-around;
-}
-section.card{
-	width: 70vw;
-	margin: 15px 0;
-}
-section.card:last-of-type{
-	margin-top: 0;
-}
-a img{
+	body nav a, h1{
+		font-size: 1.4rem;
+	}
+	main{
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+	}
+	section.card{
+		width: 70vw;
+		margin: 15px 0;
+	}
+	section.card:last-of-type{
+		margin-top: 0;
+	}
+	a img{
 
-	text-decoration:none;
-	transition:250ms;
-  }
-  a img:hover{
-	  transform: rotateZ(-10deg);
-  }
+		text-decoration:none;
+		transition:250ms;
+	}
+	a img:hover{
+		transform: rotateZ(-10deg);
+	}
 }
