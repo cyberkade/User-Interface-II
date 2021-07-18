@@ -114,6 +114,7 @@ header{
 	flex-flow: column wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	box-shadow: 0px 0px 5px rgb(55,55,55);
 	background: rgb(44,44,44);
 }
 header nav{
@@ -149,7 +150,6 @@ section.main-section{
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    background:rgb(25,25,25);
     /* border: 1px solid red; */
 }
 section.main-section p{
@@ -163,7 +163,6 @@ main{
 	justify-content: space-evenly;
     align-items: center;
     height: 71vh;
-    background:rgb(25,25,25);
     /* border: 1px solid red; */
 }
 .projects-item{
@@ -212,24 +211,25 @@ main{
     /* height: ; */
 }
 footer{
+	margin-top: 100px;
 	width: 100vw;
 	height: 20vh;
-	background: rgb(44,44,44);
-	box-shadow: 0px 0px 5px rgb(55,55,55);
+	background:rgb(44,44,44) ;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0px 0px 5px rgb(55,55,55);
 }
 footer a{
 	color: #FBFFFB;
 	height: 2.5rem;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 3px;;
 	border-right: none;
 	padding: 10px 20px;
-	background: rgb(55,55,55);
+	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px #FBFFFB;
+	box-shadow: 0px 0px 3px #FBFFFB;
 	font-size: 2.5rem;
 	transition: all 150ms ease;
 	
@@ -247,6 +247,11 @@ footer a:hover{
 		height: 2.5rem;
 		padding: 10px 20px;
 		font-size: 2.5rem;
+	}
+	footer a{
+		height: 3.5rem;
+		padding: 15px 33px;
+		font-size: 3rem;
 	}
 }
 @media screen and (min-width: 1333px){
@@ -266,11 +271,6 @@ footer a:hover{
 	}
 	.projects-text{
 		top: 220px;
-	}
-	footer a{
-		height: 3.5rem;
-		padding: 15px 33px;
-		font-size: 3rem;
 	}
 }
 
