@@ -59,22 +59,21 @@ body{
 	font-size: 1.6rem;
 	font-family: 'Sriracha', cursive;
 	background: #121212;
-	color: white;
+	color: #FBFFFB;
+	max-width: 100%;
 }
 .header{
 	font-size: 4rem;
 	font-family: 'Caveat', cursive;
-	margin-left: 15px;
-	color: #bb86fc;
+	color: #FBFFFB;
 	width: 20vw;
-	text-shadow:1px 0px 1px white;
+	text-shadow:1px 0px 1px #FBFFFB;
 	transition: all 150ms ease;
 	text-decoration: none;
 }
 .header:hover{	
 	cursor: pointer;
-	color: #bb86fc;
-	text-shadow:1px 0px 2px white;
+	color: #FBFFFB;
 	font-size: 4.1rem;
 }
 h2{
@@ -91,22 +90,23 @@ p{
 header{
 	width: 100vw;
 	height: 15vh;
+	text-align: center;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-evenly;
+	align-items: center;
 	background:rgb(44,44,44) ;
 	box-shadow: 0px 1px 5px rgb(110, 109, 109);
 }
 header nav{
 	width: 90%;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	position: relative;
-    left: 40px;
 	max-width: 100%;
 }
 header nav a{
-	color: #bb86fc;
+	color: #FBFFFB;
 	height: 15px;
 	text-decoration: none;
 	border-radius: 2px;
@@ -114,17 +114,18 @@ header nav a{
 	padding: 10px 20px;
 	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 3px white;
+	box-shadow:0px 0px 3px #FBFFFB;
 	transition: all 150ms ease;
 }
 header nav a:hover{
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #bb86fc;
 	z-index: 1;
-	color:white;
-	/* animation-fill-mode: backwards; */
+	color:#FBFFFB;
+	animation-fill-mode: backwards;
 }
 section .about-section{
 	width: 100vw;
+	height: 80vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -135,7 +136,7 @@ section .about-section{
 	box-sizing: border-box;
 	border-radius: 15px;
 	font-size: 2rem;
-	padding: 25px;
+	padding: 20px;
 	width: 40vw;
 	height: 40vh;
 	/* margin-right: 40px; */
@@ -150,7 +151,7 @@ section .about-section{
 	width: 80px;
 	height: 18px;
 	text-decoration: none;
-	box-shadow:0px 0px 3px white;
+	box-shadow:0px 0px 3px #FBFFFB;
 	border-radius: 2px;
 	padding: 10px 20px;
 	background: rgb(55,55,55);
@@ -158,7 +159,8 @@ section .about-section{
 	transition: all 150ms ease;
 }
 .about-text a:hover{
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #FBFFFB;
+	transform: translateY(-0.1em);
 }
 .about-img{
 	width: 450px;
@@ -173,7 +175,7 @@ section .about-section{
 .about-img:hover{
 	width: 450px;
 	height: 450px;
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #FBFFFB;
 }
 .projects-cont{
 	margin-top: 50px;
@@ -189,7 +191,7 @@ section .about-section{
 	width: 300px;
 	height: 300px;
 	margin-bottom: 40px;
-	background: url(https://www.picsum.photos/300);
+	background: url(https://source.unsplash.com/random/300x300/);
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #bb86fc;
@@ -199,12 +201,12 @@ section .about-section{
 	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 }
 .projects-item:hover{
-	background: url(https://www.picsum.photos/300);
+	background: url(https://source.unsplash.com/random/300x300/);
 	background-size: cover;
 	background-repeat: no-repeat;
-	color: white;
+	color: #FBFFFB;
 	border-radius: 20%;
-	box-shadow:0px 0px 5px #bb86fc;
+	box-shadow:0px 0px 5px #FBFFFB;
 }
 .projects-text{
 	position: relative;
@@ -212,13 +214,13 @@ section .about-section{
 	font-size: 2rem;
 	
 }
-.projects-text:hover{
-	color:white;
+/* .projects-text:hover{
+	color:#FBFFFB;
 	cursor: pointer;
 	animation-name: test;
 	animation-duration: 1s;
     animation-fill-mode: forwards;
-}
+} */
 footer{
 	margin-top: 100px;
 	width: 100vw;
@@ -229,119 +231,70 @@ footer{
 	align-items: center;
 }
 footer a{
-	color: #bb86fc;
-	height: 2rem;
+	color: #FBFFFB;
+	height: 2.5rem;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 3px;;
 	border-right: none;
 	padding: 10px 20px;
-	background: rgb(55,55,55);
+	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px white;
-	font-size: 2rem;
+	box-shadow: 0px 0px 3px #FBFFFB;
+	font-size: 2.5rem;
 	transition: all 150ms ease;
 	
 }
 footer a:hover{
-	box-shadow:0px 0px 10px white;
+	box-shadow:0px 0px 10px #bb86fc;
 	transform: rotateZ(3deg);
 }
 
-@keyframes test{
+
+/* @keyframes test{
 	from{transform: translateX(0px);}
 	to{transform: translateY(-5px)}
+} */
+
+@media screen and (max-width: 380px){
+	/* body .about-section h2{
+		font-size: 3rem;
+		margin-bottom: 15px;
+	}
+	body .about-section p{
+		font-size: 1.8rem;
+		margin-top: 10px;
+	} */
+	section .about-text p{
+		font-size: 1.4rem;
+	}
+	.about-text a{
+		font-size: 2.4rem;	
+		height: 15px;
+		text-align: center;
+		width: 90px;
+		height: 24px;
+	}
+	body nav a, h1{
+		font-size: 1.4rem;
+	}
+	.projects-item:nth-last-of-type(3){
+		display: none;
+	}
+	.projects-item:nth-last-of-type(4){
+		display: none;
+	}
+	.projects-item:nth-last-of-type(5){
+		display: none;
+	}
+
 }
 
-@media screen and (max-width: 860px){
-
-.about-img{
-	width: 300px;
-	height: 300px;
-	margin-bottom: 50px;
-}
-.about-img:hover{
-	width: 300px;
-	height: 300px;
-	margin-bottom: 50px;
-}
-
-.about-section{
-	width:100%;
-	display: flex;
-	flex-flow: row wrap;
-}
-.about-text{
-	width: 100vw;
-	height: 55vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-content: space-around;
-	align-items: center;
-	text-align: center
-}
-header{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.header{
-	width: 50vw;
-	text-align: center;
-	margin-bottom: 10px;
-}
-header nav{
-	width: 100vw;
-	position: relative;
-	right:0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-    left: 0px;
-	max-width: 100%;
-}
-header nav a{
-	color: #bb86fc;
-	height: 15px;
-	text-decoration: none;
-	border-radius: 2px;
-	border-right: none;
-	padding: 10px 20px;
-	background: rgb(55,55,55);
-	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 3px white;
-	transition: all 150ms ease;
-}
-.projects-item{
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	width: 200px;
-	height: 200px;
-	margin-bottom: 50px;
-	background: url(https://www.picsum.photos/300);
-	color: #bb86fc;
-	margin-top:20px;
-	border-radius: 50%;
-	box-shadow: 0px 0px 10px rgb(55,55,55);
-	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
-}
-.projects-item{
-	border-radius: 15%;
-	box-shadow: 0px 0px 10px rgb(55,55,55);
-	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
-}
-.projects-item:hover{
-	background: url(https://www.picsum.photos/300);
-	/* background-size: cover;
-	background-repeat: no-repeat; */
-	color: white;
-	border-radius: 20%;
-	box-shadow:0px 0px 5px #bb86fc;
-}
-}
-@media screen and (min-width: 1510px){
+@media screen and (max-width: 500px){
+	section .about-section{
+		box-sizing: border-box;
+		padding: 10px;
+		height: auto;
+	}
 	.projects-cont{
 		margin-top: 50px;
 		width: 100%;
@@ -350,40 +303,161 @@ header nav a{
 		justify-content: space-evenly;
 	}
 	.projects-item{
+		width: 175px;
+		height: 175px;
+	}
+	.projects-item:nth-last-of-type(1){
+		display: none;
+	}
+	.projects-item:nth-last-of-type(2){
+		display: none;
+	}
+	footer{
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 860px){
+
+	header{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.header{
+		width: 50vw;
+		text-align: center;
+	}
+	header nav{
+		width: 100vw;
+		position: relative;
+		right:0;
 		display: flex;
 		justify-content: center;
-		align-items: flex-end;
+		left: 0px;
+		max-width: 100%;
+	}
+	header nav a{
+		color: #FBFFFB;
+		height: 15px;
+		text-decoration: none;
+		border-radius: 2px;
+		border-right: none;
+		padding: 10px 20px;
+		background: rgb(35,35,35);
+		text-shadow:1px 1px 2px black;
+		box-shadow:0px 0px 3px #FBFFFB;
+		transition: all 150ms ease;
+	}
+	.about-img{
+		width: 300px;
+		height: 300px;
+		margin-bottom: 50px;
+	}
+	.about-img:hover{
+		width: 300px;
+		height: 300px;
+		margin-bottom: 50px;
+	}
+
+	section .about-section{
+		width:100%;
+		height: auto;
+		display: flex;
+		flex-flow: row wrap;
+		box-sizing: border-box;
+		padding: 20px;
+	}	
+	section .about-section h2{
+		font-size: 3.2rem;
+		margin-bottom: 15px;
+	}
+	section .about-section a{
+		font-size: 2.5rem;
+		padding: 10px 30px;
+	}
+	section .about-section p{
+		font-size: 2.2rem;
+		margin-top: 10px;
+	}
+	.about-text{
+		width: 100vw;
+		height: 55vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-content: space-around;
+		align-items: center;
+		text-align: center;
+	}
+	.about-text a{
+		font-size: 2.4rem;	
+		height: 15px;
+		text-align: center;
+		width: 90px;
+		height: 24px;
+	}
+
+	.projects-item{
+		width: 200px;
+		height: 200px;
+		margin-bottom: 50px;
+	}
+}
+@media screen and (min-width: 1510px){
+	section .about-section{
+		width: 100vw;
+		height: 80vh;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		margin-top: 75px;
+	}
+}
+@media screen and (min-width: 1900px){
+	header a.header{
+		font-size: 5rem;
+	}
+	h2{
+		font-size: 4rem;
+	}
+	p{
+		line-height: 1.75;
+		font-size: 2.5rem;
+	}
+	header nav a{
+		font-size: 2.5rem;
+		color: #FBFFFB;
+		height: 2.5rem;
+		text-decoration: none;
+		border-radius: 3px;;
+		border-right: none;
+		padding: 10px 20px;
+		background: rgb(35,35,35);
+		text-shadow:1px 1px 2px black;
+		box-shadow: 0px 0px 3px #FBFFFB;
+		font-size: 2.5rem;
+		transition: all 150ms ease;
+	}
+	.about-text a{
+		height: 2.25rem;
+		border-radius: 3px;;
+		padding: 10px 30px;
+		text-shadow:1px 1px 2px black;
+		box-shadow: 0px 0px 3px #FBFFFB;
+		font-size: 2.25rem;
+	}
+	.projects-item{
 		width: 395px;
 		height: 395px;
 		margin-bottom: 50px;
-		background: url(https://www.picsum.photos/300);
-		background-size: cover;
-		background-repeat: no-repeat;
-		color: #bb86fc;
-		margin-top:20px;
-		border-radius: 30px;
-		box-shadow: 0px 0px 10px rgb(55,55,55);
-		transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
+}
+	footer a{
+		height: 3.5rem;
+		padding: 15px 33px;
+		font-size: 3rem;
 	}
-		footer a{
-			color: #bb86fc;
-			height: 2.5rem;
-			text-decoration: none;
-			border-radius: 5px;
-			border-right: none;
-			padding: 10px 20px;
-			background: rgb(55,55,55);
-			text-shadow:1px 1px 2px black;
-			box-shadow:0px 0px 3px white;
-			font-size: 2.5rem;
-			transition: all 150ms ease;			
-		}
-		.projects-item:hover{
-			background: url(https://www.picsum.photos/300);
-			background-size: cover;
-			background-repeat: no-repeat;
-			color: white;
-			border-radius: 20%;
-			box-shadow:0px 0px 5px #bb86fc;
-		}
-	}
+}
