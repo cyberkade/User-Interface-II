@@ -81,7 +81,7 @@ h2{
 }
 p{
 	line-height: 1.75;
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 .container{
     display: flex;
@@ -205,7 +205,7 @@ section .about-section{
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #FBFFFB;
-	border-radius: 20%;
+	border-radius: 35px;
 	box-shadow:0px 0px 5px #FBFFFB;
 }
 .projects-text{
@@ -459,5 +459,10 @@ footer a:hover{
 		height: 3.5rem;
 		padding: 15px 33px;
 		font-size: 3rem;
+	}
+}
+@media(max-height:750px){
+	p{
+		font-size: 1.6rem;
 	}
 }
