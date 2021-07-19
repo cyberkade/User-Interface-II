@@ -76,7 +76,8 @@ a{
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    background:rgb(55,55,55);
+    background:rgb(44,44,44);
+	box-shadow: 0px 0px 15px rgb(55,55,55);
     height: 25vh;
     padding:20px;
     border-radius: 10px;
@@ -113,8 +114,8 @@ header{
 	flex-flow: column wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	background:rgb(44,44,44) ;
-	box-shadow: 0px 1px 5px rgb(110, 109, 109);
+	box-shadow: 0px 0px 5px rgb(55,55,55);
+	background: rgb(44,44,44);
 }
 header nav{
 	width: 90%;
@@ -149,7 +150,6 @@ section.main-section{
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
-    background:rgb(25,25,25);
     /* border: 1px solid red; */
 }
 section.main-section p{
@@ -163,7 +163,6 @@ main{
 	justify-content: space-evenly;
     align-items: center;
     height: 71vh;
-    background:rgb(25,25,25);
     /* border: 1px solid red; */
 }
 .projects-item{
@@ -179,10 +178,22 @@ main{
 	box-shadow: 0px 0px 10px rgb(55,55,55);
 	transition: box-shadow 300ms ease, background 300ms ease, color 300ms ease, border-radius 300ms ease;
 }
+.proj1{
+	background: url(/images/calCounter.png);
+	background-position: center;
+	background-size: cover;
+}
+.proj2{
+	background: url(/images/museum.png);
+}
+.proj3{
+	background: url(/images/pingpong.png);
+	background-position: center;
+	background-size: cover;
+}
 .projects-item:hover{
-	background: url(https://www.picsum.photos/300);
 	color: #FBFFFB;
-	border-radius: 20%;
+	border-radius: 35px;
 	box-shadow:0px 0px 5px #FBFFFB;
 }
 .projects-text{
@@ -200,23 +211,25 @@ main{
     /* height: ; */
 }
 footer{
+	margin-top: 100px;
 	width: 100vw;
 	height: 20vh;
 	background:rgb(44,44,44) ;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0px 0px 5px rgb(55,55,55);
 }
 footer a{
 	color: #FBFFFB;
 	height: 2.5rem;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 3px;;
 	border-right: none;
 	padding: 10px 20px;
-	background: rgb(55,55,55);
+	background: rgb(35,35,35);
 	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px #FBFFFB;
+	box-shadow: 0px 0px 3px #FBFFFB;
 	font-size: 2.5rem;
 	transition: all 150ms ease;
 	
@@ -235,9 +248,16 @@ footer a:hover{
 		padding: 10px 20px;
 		font-size: 2.5rem;
 	}
+	footer a{
+		height: 3.5rem;
+		padding: 15px 33px;
+		font-size: 3rem;
+	}
 }
 @media screen and (min-width: 1333px){
-	
+	section.main-section{
+		height: 120vh;
+	}
 	.projects-item{
 		width: 395px;
 		height: 395px;
@@ -251,11 +271,6 @@ footer a:hover{
 	}
 	.projects-text{
 		top: 220px;
-	}
-	footer a{
-		height: 3.5rem;
-		padding: 15px 33px;
-		font-size: 3rem;
 	}
 }
 

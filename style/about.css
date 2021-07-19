@@ -90,8 +90,8 @@ header{
 	flex-flow: column wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	box-shadow: 0px 0px 5px rgb(55,55,55);
 	background:rgb(44,44,44) ;
-	box-shadow: 0px 1px 5px rgb(110, 109, 109);
 }
 header nav{
 	width: 100%;
@@ -128,7 +128,7 @@ header nav a:hover{
       display:flex;
       justify-content:space-around;
       align-items:center;
-      background-color:rgba(213, 187, 230, 0.7);
+      /* background-color:rgba(213, 187, 230, 0.7); */
     }
     section.card{
       padding:10px;
@@ -197,35 +197,34 @@ header nav a:hover{
       width: 32px;
       height: 32px;
     }
-
-	
-footer{
-	margin-top:0;
-	width: 100vw;
-	height: 20vh;
-	background:rgb(44,44,44) ;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-footer a{
-	color: #FBFFFB;
-	height: 2.5rem;
-	text-decoration: none;
-	border-radius: 5px;
-	border-right: none;
-	padding: 10px 20px;
-	background: rgb(55,55,55);
-	text-shadow:1px 1px 2px black;
-	box-shadow:0px 0px 2px #FBFFFB;
-	font-size: 2.5rem;
-	transition: all 150ms ease;
-	
-}
-footer a:hover{
-	box-shadow:0px 0px 10px #bb86fc;
-	transform: rotateZ(3deg);
-}
+	footer{
+		margin-top: 100px;
+		width: 100vw;
+		height: 20vh;
+		background:rgb(44,44,44) ;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 0px 5px rgb(55,55,55);
+	}
+	footer a{
+		color: #FBFFFB;
+		height: 2.5rem;
+		text-decoration: none;
+		border-radius: 3px;;
+		border-right: none;
+		padding: 10px 20px;
+		background: rgb(35,35,35);
+		text-shadow:1px 1px 2px black;
+		box-shadow: 0px 0px 3px #FBFFFB;
+		font-size: 2.5rem;
+		transition: all 150ms ease;
+		
+	}
+	footer a:hover{
+		box-shadow:0px 0px 10px #bb86fc;
+		transform: rotateZ(3deg);
+	}
 
 @keyframes test{
 	from{transform: translateX(0px);}
