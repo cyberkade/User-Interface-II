@@ -19,17 +19,19 @@ function updateScore(player, opponent) {
     player.score += 1;
     player.display.innerText = player.score;
   }
+  if (player.score === opponent.score && player.score === maxScore - 1) {
+    maxScoreSelect.classList.add("tiebreaker");
+    maxScore++;
+    for( let i = 0; i <= 6; i++){
+      maxScoreSelect[i].innerText = `Win with ${maxScore} points!`;
+    }
+  }
   if (player.score === maxScore) {
     isGameOver = true;
     opponent.display.classList.add("has-text-danger");
     player.display.classList.add("has-text-success");
     player.button.disabled = true;
     opponent.button.disabled = true;
-  }
-  if (player.score === opponent.score && player.score === maxScore - 1) {
-    maxScoreSelect.classList.add("tiebreaker");
-    maxScore++;
-    maxScoreSelect[0].innerText = `Win with ${maxScore} points!`;
   }
 }
 
@@ -48,8 +50,8 @@ maxScoreSelect.addEventListener("change", function () {
 
 resetbtn.addEventListener("click", reset);
 
-function reset(index) {
-  if ((isGameOver = true)) {
+function reset() {
+  if (isGameOver = true) {
     score1.innerText = 0;
     score2.innerText = 0;
     player1.score = 0;
@@ -60,7 +62,8 @@ function reset(index) {
     player1.button.disabled = false;
     player2.button.disabled = false;
     maxScoreSelect.classList.remove("tiebreaker");
-    maxScoreSelect.selectedIndex = index;
+    maxScore = parseInt(maxScoreSelect.value);
+    // maxScoreSelect.selectedIndex = index;
     for (let i = 0; i <= 6; i++) {
       maxScoreSelect[i].value = 5 + i;
       maxScoreSelect[i].innerText = 5 + i;
