@@ -58,7 +58,7 @@ svg.bi-droplet-half {
 #main-nav {
   background-color: #dbdbdb;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   div h1 {
     font-size: 3em;
   }
