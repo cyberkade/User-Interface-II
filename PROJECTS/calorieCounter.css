@@ -1,0 +1,207 @@
+body {
+  margin: 0px;
+  font-family: "Josefin Sans", sans-serif;
+}
+section#goalInfo {
+  color: rgb(78, 0, 151);
+  width: auto;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
+
+  /* padding: 100px 0px; */
+  /* border: 3px solid rgb(78, 0, 151);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; */
+}
+h1 {
+  margin: 0px;
+  padding: 10px;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+  background-color: rgb(78, 0, 151);
+}
+h2 {
+  display: inline-block;
+  color: rgb(78, 0, 151);
+}
+input {
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.goalLabel {
+  font-weight: 700;
+  font-size: 25px;
+}
+.adjusted {
+  position: relative;
+  top: 145px;
+}
+.hide {
+  visibility: hidden;
+}
+.bolder {
+  font-size: 50px;
+  font-weight: 700;
+  color: #4e0097;
+}
+.bold {
+  font-size: 25px;
+}
+.setGoals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  position: relative;
+  top: 180px;
+}
+ul {
+  list-style: none;
+}
+.list {
+  font-size: larger;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#foodEaten {
+  /* width: 950px;
+  height: auto; */
+  text-align: center;
+}
+.displayFatProgress {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 185px; */
+  top: 140px;
+  right: -280px;
+}
+.displayProteinProgress {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 185px; */
+  top: 140px;
+  right: -120px;
+}
+.displayCarbProgress {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 185px; */
+  top: 140px;
+  right: 80px;
+}
+.displayCalProgress {
+  display: inline-block;
+  position: relative;
+  /* padding-left: 185px; */
+  top: 140px;
+  right: 270px;
+}
+.protein {
+  position: relative;
+  /* right: 10px; */
+}
+.fat {
+  position: relative;
+  /* right: 10px; */
+}
+.hide {
+  display: inline-block;
+  position: fixed;
+}
+.submitBtn {
+  background: none;
+  color: black;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+.submitBtn:hover {
+  color: rgb(78, 0, 151);
+  border-color: rgb(78, 0, 151);
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(78, 0, 151);
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+.input {
+  color: rgb(78, 0, 151);
+}
+input:focus {
+  outline: none;
+}
+.goalDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 5px solid rgb(78, 0, 151);
+  font-size: 30px;
+  position: relative;
+  top: 100px;
+}
+.goalDiv:first-child {
+  border-left: none;
+}
+.goalDiv:hover {
+  font-size: 30px;
+}
+.goals {
+  width: 75px;
+  display: block;
+  justify-self: center;
+}
+#foodForm {
+  margin-top: 100px;
+  justify-content: space-evenly;
+}
+div {
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+/* div.nutrients {
+ 
+} */
+#formInfo {
+  justify-content: space-evenly;
+  /* flex-wrap: wrap;
+  align-items: center; */
+}
+@media (min-width: 1400px) {
+  /* div.nutrients {
+    text-align: right;
+  } */
+  label {
+    display: block;
+  }
+  .displayFatProgress {
+    display: inline-block;
+    position: relative;
+    /* padding-left: 185px; */
+    top: 140px;
+    right: -380px;
+  }
+  .displayProteinProgress {
+    display: inline-block;
+    position: relative;
+    /* padding-left: 185px; */
+    top: 140px;
+    right: -150px;
+  }
+  .displayCarbProgress {
+    display: inline-block;
+    position: relative;
+    /* padding-left: 185px; */
+    top: 140px;
+    right: 110px;
+  }
+  .displayCalProgress {
+    display: inline-block;
+    position: relative;
+    /* padding-left: 185px; */
+    top: 140px;
+    right: 400px;
+  }
+}
